@@ -1,0 +1,8 @@
+all: lab3.o
+	g++ -o main lab3.o
+
+lab3.o: lab3.cpp
+	g++ -c lab3.cpp
+
+clean:
+	rm *.o main
